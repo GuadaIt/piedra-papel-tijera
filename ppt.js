@@ -5,7 +5,7 @@ let partidasParaGanar = 2;
 let puntajeJugador1 = 0;
 let puntajeJugador2 = 0;
 
-for (let i = 0; i < partidasParaGanar; ) {
+for (let i = 0; i <= 2; ) {
   valorIngresado1 = prompt("¿Piedra, papel o tijera?")
   if (valorIngresado1 === "piedra" || valorIngresado1 === "papel" || valorIngresado1 === "tijera") {
     valorIngresado2 = prompt("¿Piedra, papel o tijera?")
