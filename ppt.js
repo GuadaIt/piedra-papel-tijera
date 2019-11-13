@@ -5,7 +5,7 @@ let partidasParaGanar = 2;
 let puntajeJugador1 = 0;
 let puntajeJugador2 = 0;
 
-for (let i = 0; i <= 2; ) {
+for (let i = 0; i <= partidasParaGanar, puntajeJugador1 < 2; i++) {
   valorIngresado1 = prompt("¿Piedra, papel o tijera?")
   if (valorIngresado1 === "piedra" || valorIngresado1 === "papel" || valorIngresado1 === "tijera") {
     valorIngresado2 = prompt("¿Piedra, papel o tijera?")
@@ -49,4 +49,10 @@ for (let i = 0; i <= 2; ) {
   } else {
       alert(`No podes jugar`)
   };
+}
+
+if (puntajeJugador1 === partidasParaGanar) {
+  alert(`El ganador es Jugador 1`);
+} else {
+  alert(`El ganador es Jugador 2`);
 }
